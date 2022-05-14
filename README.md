@@ -13,42 +13,41 @@ The project is a simulation of an IoT application that uses sensors to monitor a
 
 In addition, for a better development, there should be no lack of water and food for the animals.
 
-Nesse cenário os sensores de temperatura, umidade, nível do reservatório de ração e
-nível do reservatório da água estão ligados em um dispositivo microcontrolado
-(Arduino, MSP, ARM e etc) que envia a informação utilizando canal serial para uma
-central de monitoramento. No nosso caso o microcontrolador será simulado utilizando
-o RealTerm.
+In this scenario, the temperature, humidity, feed reservoir level and
+water reservoir level are connected in a microcontroller 
+(Arduino, MSP, ARM, etc.) that sends the information using a serial port to a
+monitoring center. In our case the microcontroller will be simulated using
+the RealTerm.
 
-A central de monitoramento informa os valores medidos localmente e também os envia para um Broker de IoT onde o proprietário pode acompanhar tais valores online. A central será o computador onde um programa em Python realiza a leitura dos dados na porta serial e os envia para o Broker de IoT utilizando protocolo MQTT.
+The monitoring center reports the measured values locally and also sends them to an IoT Broker where the owner can track these values online. The central will be the computer where a Python program reads the data on the serial port and sends it to the IoT Broker using the MQTT protocol.
 
-Iremos utilizar o Ubidots como Broker.
+We will use Ubidots as a Broker.
 
-	• Faixa de medida do sensor de temperatura: 0 a 99 graus (apenas valores inteiros)
+	• Temperature sensor measurement range: 0 to 99 degrees (integer values only)
 
-	• Faixa de medida do sensor de umidade: 0 a 99 graus (apenas valores inteiros)
+	• Humidity sensor measurement range: 0 to 99 degrees (integer values only)
 
-	• Faixa de medida do sensor de nível reservatório da ração: 0 % a 99 % (apenas valores inteiros)
+	• Measuring range of the feed reservoir level sensor: 0 % to 99 % (integer values only)
 
-	• Faixa de medida do sensor de nível do reservatório da água: 0 % a 99 % (apenas valores inteiros)
+	• Measuring range of the water tank level sensor: 0 % to 99 % (integer values only)
 
+Serial communication features:
 
-Características da comunicação serial:
+	• Fixed size buffer equal to 09 bytes
 
-	• Buffer de tamanho fixo igual a 09 bytes
+	• End-of-buffer marker 0x02 hexadecimal
 
-	• Marcador de final do buffer 0x02 hexadecimal
+	• Information must be sent in Hexadecimal (green line)
 
-	• As informações devem ser enviadas em Hexadecimal (linha em verde)
+	• Buffer example for:
 
-	• Exemplo de buffer para:
+		o Temperature = 28 degrees
 
-		o Temperatura = 28 graus
+		o Humidity = 87%
 
-		o Umidade = 87 %
+		o Water tank level = 50%
 
-		o Nível do reservatório de água = 50 %
-
-		o Nível do reservatório de ração = 75 %
+		o Feed reservoir level = 75%
 
 ![image](https://user-images.githubusercontent.com/94933775/143328739-e945cb6d-f09c-4307-ad02-1243a2b841b3.png)
 
