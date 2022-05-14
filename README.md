@@ -51,6 +51,6 @@ Serial communication features:
 
 ![image](https://user-images.githubusercontent.com/94933775/143328739-e945cb6d-f09c-4307-ad02-1243a2b841b3.png)
 
-Ao receber o buffer pela comunicação serial o programa em Python deve verificar se o tamanho
-e o valor do último byte estão de acordo com a especificação.
-Os valores recebidos pela serial devem ser exibidos em uma Dashboard no Ubidots.
+Upon receiving the buffer from the serial port, the Python program must check if the size
+and the value of the last byte are in accordance with the specification.
+The values received by the serial must be displayed on a Dashboard in Ubidots.
