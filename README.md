@@ -1,23 +1,17 @@
 # MQTT
-O trabalho escolar é uma simulação de aplicação de IoT para monitorar uma granja.
+Simulation of IoT application to monitor a farm.
 
-Instruções dadas pelo professor:
+Instructions given by the teacher:
 
 ![image](https://user-images.githubusercontent.com/94933775/143328450-70367451-88f2-4a03-96dc-8b687a3c9918.png)
 
-Dispositivo será simulado utilizando o software RealTerm
-https://realterm.sourceforge.io/
+Serial device will be simulated using RealTerm software: https://realterm.sourceforge.io/
 
-Porta serial será emulada utilizando o software VSPE
-http://www.eterlogic.com/Downloads.html
+Serial port will be emulated using VSPE software: http://www.eterlogic.com/Downloads.html
 
-O trabalho é uma simulação de aplicação de IoT que utiliza sensores para monitorar uma
-granja de criação de aves para corte. Esses animais, quando criados em regime de
-confinamento, são sensíveis a temperatura e umidade por isso essas grandezas devem
-monitoradas.
+The project is a simulation of an IoT application that uses sensors to monitor a poultry farm. These animals, when raised in a confinement, are sensitive to temperature and humidity, so these quantities must monitored.
 
-Além disso, para que haja um melhor desenvolvimento não deve faltar água e ração
-para os animais.
+In addition, for a better development, there should be no lack of water and food for the animals.
 
 Nesse cenário os sensores de temperatura, umidade, nível do reservatório de ração e
 nível do reservatório da água estão ligados em um dispositivo microcontrolado
